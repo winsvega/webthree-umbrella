@@ -18,7 +18,7 @@ install:
     - cd libethereum
     - git remote add winsvega https://github.com/winsvega/libethereum.git
     - git fetch winsvega
-    - git checkout winsvega\develop
+    - git checkout winsvega/develop
     - cd ..
     - cmake -P webthree-helpers\deps\install_deps.cmake
 before_build:
