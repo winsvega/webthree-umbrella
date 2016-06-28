@@ -22,8 +22,9 @@ install:
     - cd ..
     - cmake -P webthree-helpers\deps\install_deps.cmake
 cache:
-    - build
-    - webthree-helpers\deps
+    - C:/projects/webthree-umbrella/build
+    - C:/projects/webthree-umbrella/webthree-helpers/deps
+    - C:/projects/webthree-umbrella/webthree-helpers/deps/install
 before_build:
     - mkdir build
     - cd build
