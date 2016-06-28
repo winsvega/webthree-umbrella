@@ -21,6 +21,9 @@ install:
     - git checkout winsvega/develop
     - cd ..
     - cmake -P webthree-helpers\deps\install_deps.cmake
+cache:
+    - build
+    - webthree-helpers\deps
 before_build:
     - mkdir build
     - cd build
