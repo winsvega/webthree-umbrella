@@ -15,6 +15,11 @@ configuration:
     - Release
 install:
     - git submodule update --init --recursive
+    - cd libethereum
+    - git remote add winsvega https://github.com/winsvega/libethereum.git
+    - git fetch winsvega
+    - git checkout winsvega\develop
+    - cd ..
     - cmake -P webthree-helpers\deps\install_deps.cmake
 before_build:
     - mkdir build
