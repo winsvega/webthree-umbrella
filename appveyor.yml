@@ -32,6 +32,6 @@ before_build:
     - git clone https://github.com/ethereum/tests.git
 build_script:
     - msbuild  C:\projects\webthree-umbrella\build\cpp-ethereum.sln /t:testeth
-after_build:
+test_script:
     - cd C:\projects\webthree-umbrella\build\libethereum\test\Release
     - testeth.exe
